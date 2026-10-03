@@ -1,0 +1,2473 @@
+{
+	"currentYear": 2026,
+	"currentMonth": "08",
+	"captains": [
+		{
+			"status": "!",
+			"nickname": "示例舰长1",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长2",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长3",
+			"recipient": "王五",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长4",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长5",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长6",
+			"recipient": "孙八",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长7",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长8",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长9",
+			"recipient": "张三",
+			"phone": "13800000004",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长10",
+			"recipient": "李四",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长11",
+			"recipient": "王五",
+			"phone": "13800000001",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长12",
+			"recipient": "赵六",
+			"phone": "13800000002",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长13",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长14",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长15",
+			"recipient": "周九",
+			"phone": "13800000005",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长16",
+			"recipient": "吴十",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长17",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长18",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长19",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长20",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长21",
+			"recipient": "钱七",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长22",
+			"recipient": "孙八",
+			"phone": "13800000002",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长23",
+			"recipient": "周九",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长24",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长25",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长26",
+			"recipient": "李四",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长27",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长28",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长29",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长30",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长31",
+			"recipient": "周九",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长32",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长33",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长34",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长35",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长36",
+			"recipient": "赵六",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长37",
+			"recipient": "钱七",
+			"phone": "13800000002",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长38",
+			"recipient": "孙八",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长39",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长40",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长41",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长42",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长43",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长44",
+			"recipient": "赵六",
+			"phone": "13800000004",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长45",
+			"recipient": "钱七",
+			"phone": "13800000005",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "&",
+			"nickname": "示例舰长46",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长47",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长48",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长49",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长50",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长51",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长52",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长53",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长54",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长55",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长56",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长57",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		}
+	],
+	"rememberedAddresses": [
+		{
+			"nickname": "示例舰长1",
+			"recipient": "张三",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长2",
+			"recipient": "李四",
+			"phone": "13800000002",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长3",
+			"recipient": "王五",
+			"phone": "13800000003",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		},
+		{
+			"nickname": "示例舰长4",
+			"recipient": "赵六",
+			"phone": "13800000004",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长5",
+			"recipient": "钱七",
+			"phone": "13800000005",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长6",
+			"recipient": "孙八",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		},
+		{
+			"nickname": "示例舰长7",
+			"recipient": "周九",
+			"phone": "13800000002",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长8",
+			"recipient": "吴十",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长9",
+			"recipient": "张三",
+			"phone": "13800000004",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		},
+		{
+			"nickname": "示例舰长10",
+			"recipient": "李四",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长11",
+			"recipient": "王五",
+			"phone": "13800000001",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长12",
+			"recipient": "赵六",
+			"phone": "13800000002",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		},
+		{
+			"nickname": "示例舰长13",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长14",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长15",
+			"recipient": "周九",
+			"phone": "13800000005",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		},
+		{
+			"nickname": "示例舰长16",
+			"recipient": "吴十",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号"
+		},
+		{
+			"nickname": "示例舰长17",
+			"recipient": "张三",
+			"phone": "13800000002",
+			"address": "XX省XX市YY区示例街2号"
+		},
+		{
+			"nickname": "示例舰长18",
+			"recipient": "李四",
+			"phone": "13800000003",
+			"address": "XX省ZZ市AA区演示楼3栋1单元"
+		}
+	],
+	"captains_2026_06": [
+		{
+			"status": "!",
+			"nickname": "示例舰长1",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长2",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长3",
+			"recipient": "王五",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长4",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长5",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长6",
+			"recipient": "孙八",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长7",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长8",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长9",
+			"recipient": "张三",
+			"phone": "13800000004",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长10",
+			"recipient": "李四",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长11",
+			"recipient": "王五",
+			"phone": "13800000001",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长12",
+			"recipient": "赵六",
+			"phone": "13800000002",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长13",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长14",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长15",
+			"recipient": "周九",
+			"phone": "13800000005",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长16",
+			"recipient": "吴十",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长17",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长18",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长19",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长20",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长21",
+			"recipient": "钱七",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长22",
+			"recipient": "孙八",
+			"phone": "13800000002",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长23",
+			"recipient": "周九",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长24",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长25",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长26",
+			"recipient": "李四",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长27",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长28",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长29",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长30",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长31",
+			"recipient": "周九",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长32",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长33",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长34",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长35",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长36",
+			"recipient": "赵六",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长37",
+			"recipient": "钱七",
+			"phone": "13800000002",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长38",
+			"recipient": "孙八",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长39",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长40",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长41",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长42",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长43",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长44",
+			"recipient": "赵六",
+			"phone": "13800000004",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长45",
+			"recipient": "钱七",
+			"phone": "13800000005",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "&",
+			"nickname": "示例舰长46",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长47",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长48",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长49",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长50",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长51",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长52",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长53",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长54",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长55",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长56",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长57",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		}
+	],
+	"captains_2026_07": [
+		{
+			"status": "#",
+			"nickname": "示例舰长1",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长2",
+			"recipient": "李四",
+			"phone": "13800000002",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长3",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长4",
+			"recipient": "赵六",
+			"phone": "13800000004",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "*",
+			"nickname": "示例舰长5",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长6",
+			"recipient": "孙八",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长7",
+			"recipient": "周九",
+			"phone": "13800000002",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长8",
+			"recipient": "吴十",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长9",
+			"recipient": "张三",
+			"phone": "13800000004",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长10",
+			"recipient": "李四",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长11",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长12",
+			"recipient": "赵六",
+			"phone": "13800000002",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长13",
+			"recipient": "钱七",
+			"phone": "13800000003",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长14",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "*",
+			"nickname": "示例舰长15",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长16",
+			"recipient": "吴十",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长17",
+			"recipient": "张三",
+			"phone": "13800000002",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长18",
+			"recipient": "李四",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长19",
+			"recipient": "王五",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长20",
+			"recipient": "赵六",
+			"phone": "13800000005",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长21",
+			"recipient": "钱七",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长22",
+			"recipient": "孙八",
+			"phone": "13800000002",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长23",
+			"recipient": "周九",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长24",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长25",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长26",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长27",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长28",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长29",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长30",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长31",
+			"recipient": "周九",
+			"phone": "13800000001",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长32",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长33",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长34",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长35",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长36",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长37",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长38",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长39",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长40",
+			"recipient": "吴十",
+			"phone": "13800000005",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长41",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长42",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长43",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长44",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长45",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长46",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长47",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长48",
+			"recipient": "吴十",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长49",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长50",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长51",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长52",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长53",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长54",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长55",
+			"recipient": "周九",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长56",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长57",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		}
+	],
+	"captains_2026_09": [
+		{
+			"status": "@",
+			"nickname": "示例舰长1",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长2",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长3",
+			"recipient": "王五",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "!",
+			"nickname": "示例舰长4",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长5",
+			"recipient": "钱七",
+			"phone": "13800000005",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "*",
+			"nickname": "示例舰长6",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长7",
+			"recipient": "周九",
+			"phone": "13800000002",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长8",
+			"recipient": "吴十",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长9",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长10",
+			"recipient": "李四",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "*",
+			"nickname": "示例舰长11",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长12",
+			"recipient": "赵六",
+			"phone": "13800000002",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长13",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长14",
+			"recipient": "孙八",
+			"phone": "13800000004",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长15",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长16",
+			"recipient": "吴十",
+			"phone": "13800000001",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长17",
+			"recipient": "张三",
+			"phone": "13800000002",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长18",
+			"recipient": "李四",
+			"phone": "13800000003",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长19",
+			"recipient": "王五",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": true
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长20",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长21",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长22",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长23",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "-",
+			"nickname": "示例舰长24",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长25",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长26",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长27",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长28",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长29",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "*",
+			"nickname": "示例舰长30",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长31",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长32",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长33",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长34",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长35",
+			"recipient": "王五",
+			"phone": "13800000005",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长36",
+			"recipient": "赵六",
+			"phone": "13800000001",
+			"address": "XX省ZZ市AA区演示楼3栋1单元",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "@",
+			"nickname": "示例舰长37",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长38",
+			"recipient": "孙八",
+			"phone": "13800000003",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长39",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长40",
+			"recipient": "吴十",
+			"phone": "13800000005",
+			"address": "XX省XX市XX区测试路1号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长41",
+			"recipient": "张三",
+			"phone": "13800000001",
+			"address": "XX省XX市YY区示例街2号",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长42",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长43",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": " ",
+			"nickname": "示例舰长44",
+			"recipient": "赵六",
+			"phone": "13800000004",
+			"address": "",
+			"filled": true,
+			"remembered": false
+		},
+		{
+			"status": "#",
+			"nickname": "示例舰长45",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "~",
+			"nickname": "示例舰长46",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		}
+	],
+	"captains_2026_08": [
+		{
+			"status": "^",
+			"nickname": "示例舰长1",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长2",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长3",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长4",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长5",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长6",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长7",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长8",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长9",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长10",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长11",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长12",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长13",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长14",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长15",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长16",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长17",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长18",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长19",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长20",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长21",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长22",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长23",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长24",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长25",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长26",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长27",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长28",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长29",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长30",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长31",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长32",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长33",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长34",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长35",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长36",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长37",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长38",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长39",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长40",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长41",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长42",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长43",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		},
+		{
+			"status": "^",
+			"nickname": "示例舰长44",
+			"recipient": "",
+			"phone": "",
+			"address": "",
+			"filled": false,
+			"remembered": false
+		}
+	]
+}

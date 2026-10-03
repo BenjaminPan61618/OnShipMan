@@ -1,0 +1,5 @@
+此文件是占位符，确保 data/ 目录在 git 仓库中存在。
+
+真实的 config.json（含用户姓名、手机号、地址等敏感信息）已被 .gitignore 排除。
+首次运行前，请将 config.example.json 复制为 config.json：
+    cp data/config.example.json data/config.json

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大航海收件信息管理器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-left">
+        <h1>🚢 大航海收件信息管理器</h1>
+        <div class="period-selector">
+          <select id="year-select">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+          </select>
+          <span class="period-separator">年</span>
+          <select id="month-select">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span class="period-separator">月</span>
+        </div>
+      </div>
+      <div class="toolbar">
+        <button id="btn-manage-remembered" class="btn btn-info">📝 管理记住的地址</button>
+        <button id="btn-fetch-guards" class="btn btn-primary">🌐 拉取舰长名单</button>
+        <button id="btn-import" class="btn btn-success">📂 读取文档</button>
+        <button id="btn-save" class="btn btn-warning">💾 保存文档</button>
+        <button id="btn-copy" class="btn btn-purple">📋 复制已填写</button>
+        <button id="btn-export" class="btn btn-teal">📤 导出已填写</button>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="filter-section">
+          <label for="filter-select">筛选状态:</label>
+          <select id="filter-select">
+            <option value="全部">全部</option>
+            <option value="已填写">已填写</option>
+            <option value="待询问">待询问</option>
+            <option value="已询问(QQ)">已询问(QQ)</option>
+            <option value="已询问(B站)">已询问(B站)</option>
+            <option value="无法联系">无法联系</option>
+            <option value="小号">小号</option>
+            <option value="无需">无需</option>
+            <option value="特殊情况">特殊情况</option>
+            <option value="主播">主播</option>
+          </select>
+        </div>
+
+        <div class="stats-section">
+          <h3>统计信息</h3>
+          <div class="stat-item">
+            <span class="stat-label">总人数:</span>
+            <span id="stat-total" class="stat-value">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">已填写:</span>
+            <span id="stat-filled" class="stat-value success">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">未填写:</span>
+            <span id="stat-unfilled" class="stat-value danger">0</span>
+          </div>
+        </div>
+
+        <div class="symbol-section">
+          <h3>状态符号说明</h3>
+          <div class="symbol-list">
+            <div class="symbol-item" style="background-color: #4CAF50;">已填写</div>
+            <div class="symbol-item" style="background-color: #FF9800;">待询问 (^)</div>
+            <div class="symbol-item" style="background-color: #2196F3;">已询问 (@)</div>
+            <div class="symbol-item" style="background-color: #F44336;">无法联系 (*)</div>
+            <div class="symbol-item" style="background-color: #9E9E9E;">无需 (!)</div>
+            <div class="symbol-item" style="background-color: #9C27B0;">小号 (&)</div>
+            <div class="symbol-item" style="background-color: #607D8B;">特殊情况 (-)</div>
+            <div class="symbol-item" style="background-color: #E91E63;">主播 (~)</div>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>批量操作</h3>
+          <button id="btn-mark-all-pending" class="btn btn-secondary">⏳ 全部待询问</button>
+          <button id="btn-mark-all-asked" class="btn btn-secondary">📞 全部已询问</button>
+          <button id="btn-clear-filled" class="btn btn-danger">🗑️ 清空已填写</button>
+          <button id="btn-clear-unfilled" class="btn btn-danger">🗑️ 清空未填写</button>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <div class="filled-panel">
+          <div class="panel-header">
+            <span class="panel-title">✅ 已填写舰长</span>
+            <label class="checkbox-label">
+              <input type="checkbox" id="hide-recipient"> 隐藏收件人
+            </label>
+          </div>
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>昵称 (B站用户名)</th>
+                  <th>收件人名字</th>
+                </tr>
+              </thead>
+              <tbody id="filled-list"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="unfilled-panel">
+          <div class="panel-header">
+            <span class="panel-title">⏳ 未填写舰长</span>
+          </div>
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>状态</th>
+                  <th>昵称 (B站用户名)</th>
+                </tr>
+              </thead>
+              <tbody id="unfilled-list"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="edit-section">
+        <div class="edit-header">
+          <h2>✏️ 编辑舰长信息</h2>
+        </div>
+
+        <div class="form-group">
+          <label for="status-select">状态标记:</label>
+          <select id="status-select">
+            <option value="^">待询问 (^)</option>
+            <option value="@">已询问(QQ) (@)</option>
+            <option value="#">已询问(B站) (#)</option>
+            <option value="*">无法联系 (*)</option>
+            <option value="!">无需 (!)</option>
+            <option value="&">小号 (&)</option>
+            <option value="-">特殊情况 (-)</option>
+            <option value="~">主播 (~)</option>
+            <option value=" ">已填写</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="nickname">昵称 (B站用户名):</label>
+          <input type="text" id="nickname" placeholder="请输入B站用户名">
+        </div>
+
+        <div class="form-group">
+          <label for="recipient">收件人名字:</label>
+          <input type="text" id="recipient" placeholder="请输入收件人名字">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">手机号:</label>
+          <input type="text" id="phone" placeholder="请输入手机号">
+        </div>
+
+        <div class="form-group">
+          <label for="address">地址:</label>
+          <textarea id="address" rows="4" placeholder="请输入详细地址"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="remember-checkbox"> 记住此地址（下次快速填写）
+          </label>
+        </div>
+
+        <div id="status-indicator" class="status-indicator"></div>
+
+        <div class="edit-actions">
+          <button id="btn-save-changes" class="btn btn-success">💾 保存修改</button>
+          <button id="btn-delete" class="btn btn-danger">🗑️ 删除当前</button>
+        </div>
+
+        <div class="quick-status-actions">
+          <button id="btn-status-qq" class="btn btn-small btn-blue">📞 已询问(QQ)</button>
+          <button id="btn-status-bilibili" class="btn btn-small btn-blue">💬 已询问(B站)</button>
+          <button id="btn-status-pending" class="btn btn-small btn-orange">⏳ 待询问</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="status-bar">就绪</footer>
+  </div>
+
+  <div id="fetch-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>🌐 拉取舰长名单</h3>
+      <p>输入B站主播UID，自动拉取舰长列表</p>
+      <input type="text" id="uid-input" placeholder="请输入主播UID">
+      <div class="modal-actions">
+        <button id="btn-do-fetch" class="btn btn-primary">开始拉取</button>
+        <button id="btn-cancel-fetch" class="btn btn-secondary">取消</button>
+      </div>
+      <div id="fetch-status" class="fetch-status"></div>
+    </div>
+  </div>
+
+  <div id="remembered-modal" class="modal hidden">
+    <div class="modal-content" style="width: 600px;">
+      <span class="close-modal">&times;</span>
+      <h3>📝 管理记住的地址</h3>
+      <p>以下地址已被记住，可快速应用到对应舰长</p>
+      <div id="remembered-list" class="remembered-list"></div>
+      <div class="modal-actions">
+        <button id="btn-close-remembered" class="btn btn-secondary">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
