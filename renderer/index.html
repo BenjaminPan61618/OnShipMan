@@ -101,6 +101,7 @@
           <button id="btn-mark-all-asked" class="btn btn-secondary">📞 全部已询问</button>
           <button id="btn-clear-filled" class="btn btn-danger">🗑️ 清空已填写</button>
           <button id="btn-clear-unfilled" class="btn btn-danger">🗑️ 清空未填写</button>
+          <button id="btn-clear-all" class="btn btn-danger btn-full">⚠️ 清空全部舰长</button>
         </div>
       </div>
 
@@ -146,6 +147,7 @@
       <div class="edit-section">
         <div class="edit-header">
           <h2>✏️ 编辑舰长信息</h2>
+          <button id="btn-new-captain" class="btn btn-primary">➕ 新建舰长</button>
         </div>
 
         <div class="form-group">
@@ -194,6 +196,16 @@
         <div class="edit-actions">
           <button id="btn-save-changes" class="btn btn-success">💾 保存修改</button>
           <button id="btn-delete" class="btn btn-danger">🗑️ 删除当前</button>
+        </div>
+
+        <div class="saved-addresses-section">
+          <div class="saved-addresses-header">
+            <h3>📚 已保存的多地址</h3>
+            <button id="btn-add-saved-address" class="btn btn-small btn-info">➕ 把当前地址存起来</button>
+          </div>
+          <div id="saved-addresses-list" class="saved-addresses-list">
+            <p class="empty-hint">选中舰长后可查看/管理该舰长保存的多个地址</p>
+          </div>
         </div>
 
         <div class="quick-status-actions">

@@ -17,5 +17,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
   removeRememberedAddress: (nickname) => ipcRenderer.invoke('remove-remembered-address', nickname),
   getRememberedAddressByNickname: (nickname) => ipcRenderer.invoke('get-remembered-address-by-nickname', nickname),
   clearFilledCaptains: () => ipcRenderer.invoke('clear-filled-captains'),
-  clearUnfilledCaptains: () => ipcRenderer.invoke('clear-unfilled-captains')
+  clearUnfilledCaptains: () => ipcRenderer.invoke('clear-unfilled-captains'),
+  clearAllCaptains: () => ipcRenderer.invoke('clear-all-captains'),
+  addSavedAddress: ({ captainIndex, address }) => ipcRenderer.invoke('add-saved-address', { captainIndex, address }),
+  deleteSavedAddress: ({ captainIndex, addrId }) => ipcRenderer.invoke('delete-saved-address', { captainIndex, addrId }),
+  switchToSavedAddress: ({ captainIndex, addrId }) => ipcRenderer.invoke('switch-to-saved-address', { captainIndex, addrId })
 });

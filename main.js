@@ -222,3 +222,19 @@ ipcMain.handle('clear-filled-captains', async () => {
 ipcMain.handle('clear-unfilled-captains', async () => {
   return store.clearUnfilledCaptains();
 });
+
+ipcMain.handle('clear-all-captains', async () => {
+  return store.clearAllCaptains();
+});
+
+ipcMain.handle('add-saved-address', async (_, { captainIndex, address }) => {
+  return store.addSavedAddress(captainIndex, address);
+});
+
+ipcMain.handle('delete-saved-address', async (_, { captainIndex, addrId }) => {
+  return store.deleteSavedAddress(captainIndex, addrId);
+});
+
+ipcMain.handle('switch-to-saved-address', async (_, { captainIndex, addrId }) => {
+  return store.switchToSavedAddress(captainIndex, addrId);
+});

@@ -508,6 +508,88 @@ body {
   font-size: 12px;
 }
 
+/* ========== 多地址管理 ========== */
+.edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.edit-header h2 {
+  margin-bottom: 0;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.saved-addresses-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.saved-addresses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.saved-addresses-header h3 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.saved-addresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.saved-address-item {
+  padding: 10px 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border-left: 3px solid #2196F3;
+}
+
+.saved-address-item .addr-label {
+  font-weight: 600;
+  color: #2196F3;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.saved-address-item .addr-detail {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.saved-address-item .addr-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.saved-address-item .addr-actions .btn {
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+.empty-hint {
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+  padding: 10px;
+}
+
 @media (max-width: 1000px) {
   .main-content {
     flex-direction: column;

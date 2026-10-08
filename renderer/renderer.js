@@ -47,6 +47,10 @@ const btnFetchGuards = document.getElementById('btn-fetch-guards');
 const btnManageRemembered = document.getElementById('btn-manage-remembered');
 const btnClearFilled = document.getElementById('btn-clear-filled');
 const btnClearUnfilled = document.getElementById('btn-clear-unfilled');
+const btnClearAll = document.getElementById('btn-clear-all');
+const btnNewCaptain = document.getElementById('btn-new-captain');
+const btnAddSavedAddress = document.getElementById('btn-add-saved-address');
+const savedAddressesList = document.getElementById('saved-addresses-list');
 
 const btnStatusQQ = document.getElementById('btn-status-qq');
 const btnStatusBilibili = document.getElementById('btn-status-bilibili');
@@ -157,6 +161,7 @@ async function selectCaptain(index) {
   }
   
   updateStatusIndicator();
+  renderSavedAddressesList(captain.savedAddresses || []);
   
   document.querySelectorAll('tr').forEach(tr => tr.classList.remove('selected'));
   const trs = document.querySelectorAll('tr[data-index="' + index + '"]');
@@ -203,21 +208,41 @@ function updateStatusIndicator() {
 }
 
 async function saveChanges() {
-  if (currentEditIndex < 0) {
-    alert('请先选择一个舰长进行编辑');
+  const isNew = currentEditIndex < 0;
+
+  if (isNew && !nicknameInput.value.trim()) {
+    alert('请输入昵称！');
     return;
+  }
+
+  if (!isNew) {
+    const nickname = nicknameInput.value.trim();
+    if (!nickname) {
+      alert('昵称不能为空！');
+      return;
+    }
   }
   
   const nickname = nicknameInput.value.trim();
-  if (!nickname) {
-    alert('昵称不能为空！');
-    return;
-  }
-  
   const recipient = recipientInput.value.trim();
   const phone = phoneInput.value.trim();
   const address = addressInput.value.trim();
   const remembered = rememberCheckbox.checked;
+  
+  // 读取当前已保存的多地址
+  const existingSaved = !isNew ? (captains[currentEditIndex].savedAddresses || []) : [];
+
+  // 如果当前地址完整且 savedAddresses 为空，自动存一份作为默认
+  let savedAddresses = [...existingSaved];
+  if (recipient && phone && address && savedAddresses.length === 0) {
+    savedAddresses.push({
+      id: 'auto-' + Date.now().toString(36),
+      label: '默认',
+      recipient,
+      phone,
+      address
+    });
+  }
   
   const captain = {
     index: currentEditIndex,
@@ -226,10 +251,12 @@ async function saveChanges() {
     recipient: recipient,
     phone: phone,
     address: address,
-    remembered: remembered
+    remembered: remembered,
+    savedAddresses
   };
   
   captains = await window.electronAPI.saveCaptain(captain);
+  const msgPrefix = isNew ? '舰长已添加' : '修改已保存';
   
   if (remembered && recipient && phone && address) {
     await window.electronAPI.addRememberedAddress({
@@ -238,16 +265,28 @@ async function saveChanges() {
       phone: phone,
       address: address
     });
-    statusBar.textContent = '修改已保存（地址已记住）';
+    statusBar.textContent = `${msgPrefix}（地址已记住）`;
   } else if (remembered && (!recipient || !phone || !address)) {
-    statusBar.textContent = '修改已保存（地址信息不完整，未记住）';
+    statusBar.textContent = `${msgPrefix}（地址信息不完整，未记住）`;
   } else {
-    statusBar.textContent = '修改已保存';
+    statusBar.textContent = msgPrefix;
+  }
+
+  // 如果是新建，选中新添加的
+  if (isNew) {
+    const newIndex = captains.length - 1;
+    currentEditIndex = newIndex;
   }
   
   refreshLists();
   updateStats();
   updateStatusIndicator();
+
+  // 刷新多地址列表
+  const refreshedCaptain = captains[currentEditIndex];
+  if (refreshedCaptain) {
+    renderSavedAddressesList(refreshedCaptain.savedAddresses || []);
+  }
 }
 
 async function deleteCurrent() {
@@ -278,9 +317,14 @@ function clearForm() {
   statusIndicator.textContent = '';
   currentEditIndex = -1;
   document.querySelectorAll('tr').forEach(tr => tr.classList.remove('selected'));
+  renderSavedAddressesList([]);
 }
 
 function setStatus(status) {
+  if (currentEditIndex < 0) {
+    alert('请先新建或选择一个舰长');
+    return;
+  }
   statusSelect.value = status;
   saveChanges();
 }
@@ -554,6 +598,132 @@ window.removeRememberedAddress = async (nickname) => {
     rememberCheckbox.checked = false;
   }
 };
+
+function renderSavedAddressesList(saved) {
+  if (!saved || saved.length === 0) {
+    savedAddressesList.innerHTML = '<p class="empty-hint">（暂无保存的多地址）保存时会自动存一份</p>';
+    return;
+  }
+
+  const escapeHtml = (str) => String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  savedAddressesList.innerHTML = '';
+  saved.forEach((addr) => {
+    const item = document.createElement('div');
+    item.className = 'saved-address-item';
+    item.innerHTML = `
+      <div class="addr-label">🏷️ ${escapeHtml(addr.label) || '(未命名)'}</div>
+      <div class="addr-detail">
+        收件人: ${escapeHtml(addr.recipient) || '-'}<br>
+        电话: ${escapeHtml(addr.phone) || '-'}<br>
+        地址: ${escapeHtml(addr.address) || '-'}
+      </div>
+      <div class="addr-actions">
+        <button class="btn btn-small btn-success">切换到这个</button>
+        <button class="btn btn-small btn-danger">删除</button>
+      </div>
+    `;
+    // 用 addEventListener 避免内联 onclick 的转义问题
+    item.querySelector('.btn-success').addEventListener('click', () => window.switchToSaved(addr.id));
+    item.querySelector('.btn-danger').addEventListener('click', () => window.deleteSaved(addr.id));
+    savedAddressesList.appendChild(item);
+  });
+}
+
+// 多地址操作 — 挂载到 window 供内联 onclick 使用
+window.switchToSaved = async function(addrId) {
+  if (currentEditIndex < 0) { alert('请先选择一个舰长'); return; }
+  const result = await window.electronAPI.switchToSavedAddress({
+    captainIndex: currentEditIndex,
+    addrId
+  });
+  if (result.success) {
+    const captain = result.captain;
+    recipientInput.value = captain.recipient;
+    phoneInput.value = captain.phone;
+    addressInput.value = captain.address;
+    statusSelect.value = captain.status;
+    updateStatusIndicator();
+    // 同步 captains 里的数据
+    captains[currentEditIndex] = captain;
+    refreshLists();
+    statusBar.textContent = `已切换到地址: ${(captain.savedAddresses || []).find(a => a.id === addrId)?.label || ''}`;
+  } else {
+    alert(result.message);
+  }
+};
+
+window.deleteSaved = async function(addrId) {
+  if (currentEditIndex < 0) { alert('请先选择一个舰长'); return; }
+  if (!confirm('确定要删除这个保存的地址吗？')) return;
+  const result = await window.electronAPI.deleteSavedAddress({
+    captainIndex: currentEditIndex,
+    addrId
+  });
+  if (result.success) {
+    // 同步 captains 里的数据
+    captains[currentEditIndex].savedAddresses = result.savedAddresses;
+    renderSavedAddressesList(result.savedAddresses);
+    statusBar.textContent = `已删除 ${result.removed} 个地址`;
+  }
+};
+
+// ========== 新建舰长 ==========
+btnNewCaptain.addEventListener('click', () => {
+  clearForm();
+  nicknameInput.focus();
+  statusBar.textContent = '请填写新舰长信息，完成后点击 💾 保存修改';
+});
+
+// ========== 清空全部 ==========
+btnClearAll.addEventListener('click', async () => {
+  const count = captains.length;
+  if (count === 0) {
+    alert('当前列表已为空');
+    return;
+  }
+  if (!confirm(`确定要清空全部 ${count} 个舰长吗？此操作不可撤销！`)) return;
+  if (!confirm('⚠️ 二次确认：真的要清空吗？')) return;
+
+  const result = await window.electronAPI.clearAllCaptains();
+  if (result.success) {
+    captains = await window.electronAPI.getCaptains();
+    refreshLists();
+    updateStats();
+    clearForm();
+    statusBar.textContent = `已清空全部 ${result.count} 个舰长`;
+  }
+});
+
+// ========== 把当前地址存为新地址 ==========
+btnAddSavedAddress.addEventListener('click', async () => {
+  if (currentEditIndex < 0) {
+    alert('请先选择一个舰长，或新建一个');
+    return;
+  }
+  const recipient = recipientInput.value.trim();
+  const phone = phoneInput.value.trim();
+  const address = addressInput.value.trim();
+  if (!recipient || !phone || !address) {
+    alert('当前地址信息不完整，请先填完整');
+    return;
+  }
+
+  const label = prompt('给这个地址起个标签（如：默认 / 老家 / 新地址）：', `地址${(captains[currentEditIndex].savedAddresses || []).length + 1}`);
+  if (label === null) return; // 用户取消
+
+  const result = await window.electronAPI.addSavedAddress({
+    captainIndex: currentEditIndex,
+    address: { label: label.trim() || '未命名', recipient, phone, address }
+  });
+  if (result.success) {
+    captains[currentEditIndex].savedAddresses = result.savedAddresses;
+    renderSavedAddressesList(result.savedAddresses);
+    statusBar.textContent = `已保存新地址: ${label}`;
+  } else {
+    alert(result.message);
+  }
+});
 
 loadCaptains();
 loadCurrentPeriod();

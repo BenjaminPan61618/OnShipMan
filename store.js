@@ -108,7 +108,10 @@ class Store {
     const key = this._getCurrentCaptainsKey();
     const captains = this.getCaptains();
     
+    const savedAddresses = captain.savedAddresses || [];
+    
     if (captain.index !== undefined && captain.index >= 0) {
+      const existingSaved = captains[captain.index].savedAddresses || [];
       captains[captain.index] = {
         status: captain.status || '^',
         nickname: captain.nickname,
@@ -116,7 +119,8 @@ class Store {
         phone: captain.phone || '',
         address: captain.address || '',
         filled: Boolean(captain.recipient && captain.phone && captain.address),
-        remembered: captain.remembered || false
+        remembered: captain.remembered || false,
+        savedAddresses: savedAddresses.length > 0 ? savedAddresses : existingSaved
       };
       
       if (captains[captain.index].filled) {
@@ -131,12 +135,91 @@ class Store {
         phone: captain.phone || '',
         address: captain.address || '',
         filled,
-        remembered: captain.remembered || false
+        remembered: captain.remembered || false,
+        savedAddresses
       });
     }
     
     this.store.set(key, captains);
     return captains;
+  }
+
+  // ========== 多地址管理 ==========
+
+  addSavedAddress(captainIndex, address) {
+    const key = this._getCurrentCaptainsKey();
+    const captains = this.getCaptains();
+
+    if (captainIndex < 0 || captainIndex >= captains.length) {
+      return { success: false, message: '舰长不存在' };
+    }
+
+    const captain = captains[captainIndex];
+    if (!captain.savedAddresses) captain.savedAddresses = [];
+
+    // 生成简单 ID
+    const addrWithId = {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      label: address.label || `地址${captain.savedAddresses.length + 1}`,
+      recipient: address.recipient || '',
+      phone: address.phone || '',
+      address: address.address || ''
+    };
+
+    captain.savedAddresses.push(addrWithId);
+    this.store.set(key, captains);
+    return { success: true, savedAddresses: captain.savedAddresses };
+  }
+
+  deleteSavedAddress(captainIndex, addrId) {
+    const key = this._getCurrentCaptainsKey();
+    const captains = this.getCaptains();
+
+    if (captainIndex < 0 || captainIndex >= captains.length) {
+      return { success: false, message: '舰长不存在' };
+    }
+
+    const captain = captains[captainIndex];
+    if (!captain.savedAddresses) captain.savedAddresses = [];
+
+    const before = captain.savedAddresses.length;
+    captain.savedAddresses = captain.savedAddresses.filter(a => a.id !== addrId);
+    const removed = before - captain.savedAddresses.length;
+
+    this.store.set(key, captains);
+    return { success: true, removed, savedAddresses: captain.savedAddresses };
+  }
+
+  switchToSavedAddress(captainIndex, addrId) {
+    const key = this._getCurrentCaptainsKey();
+    const captains = this.getCaptains();
+
+    if (captainIndex < 0 || captainIndex >= captains.length) {
+      return { success: false, message: '舰长不存在' };
+    }
+
+    const captain = captains[captainIndex];
+    const target = (captain.savedAddresses || []).find(a => a.id === addrId);
+    if (!target) {
+      return { success: false, message: '地址不存在' };
+    }
+
+    captain.recipient = target.recipient;
+    captain.phone = target.phone;
+    captain.address = target.address;
+    captain.filled = Boolean(target.recipient && target.phone && target.address);
+    if (captain.filled) captain.status = ' ';
+
+    this.store.set(key, captains);
+    return { success: true, captain };
+  }
+
+  clearAllCaptains() {
+    const key = this._getCurrentCaptainsKey();
+    const captains = this.getCaptains();
+    const count = captains.length;
+    this.store.set(key, []);
+    return { success: true, count };
   }
 
   deleteCaptain(index) {
