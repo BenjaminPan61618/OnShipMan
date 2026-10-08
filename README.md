@@ -116,20 +116,6 @@ onshipman/
     └── exports/            # 🔒 导出的 TXT 文件（已 gitignore）
 ```
 
----
-
-## 🔒 隐私与安全
-
-本项目**默认排除所有个人数据**，不会因推送到 GitHub 而泄露你的舰长信息：
-
-- `data/config.json` — 你的全部舰长真实数据（🔒 gitignore）
-- `data/exports/` — 导出的地址文本（🔒 gitignore）
-- `node_modules/`、`dist/`、`.env` 等构建产物和密钥（🔒 gitignore）
-
-仓库里只会包含脱敏的 `data/config.example.json` 和一个空的 `data/.gitkeep`。
-
----
-
 ## 🛠️ 技术栈
 
 | 组件 | 版本 | 说明 |
@@ -143,4 +129,4 @@ onshipman/
 
 ## 📜 许可证
 
-MIT License — 自由使用、修改、分发。
+GPL v2 License — 详见 LICENSE
